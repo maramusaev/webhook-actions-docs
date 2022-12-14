@@ -11,7 +11,7 @@ on:
   repository_dispatch:
     types: [team_created]
 ```
-For more repository_dispatch types, please see [GitHub Webhooks Docs](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
+For more repository_dispatch types, please see [GitHub Webhooks Documentation](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
 
 A repository_dispatch type will be a combination of the webhook name and possibly an underscore and action, if the webhook includes the action type. The following are examples:
 - *team_add*
