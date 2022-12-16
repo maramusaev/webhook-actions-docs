@@ -1,6 +1,15 @@
 # Webhooks Actions GitHub App
 Turn your Organization's Webhook events into repository dispatches.
 
+## How it works
+
+```mermaid
+sequenceDiagram
+    Webhook Actions-->>+Org Webhooks: subscribe
+    Org Webhooks-->>-Webhook Actions: publish
+    Webhook Actions-->>Repo Workflows: repository_dispatch
+```
+
 ## Installation
 Install Webhook Actions app and select the repositories which should receive dispatches.
 
