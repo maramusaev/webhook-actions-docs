@@ -29,7 +29,5 @@ A repository_dispatch type will be a combination of the webhook name and possibl
 
 The *repository_dispatch* **webhook** will not be dispatched as this would cause a feedback loop.
 
-The repository dispatch's `client_payload` will include all of the webhook payload, excluding *action*, *installation*, *organization*, *sender*.
-
 See [GitHub Repository Dispatch Documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch) for further information.
 
