@@ -13,6 +13,15 @@ sequenceDiagram
 ## Installation
 Install Webhook Actions app and select the repositories which should receive dispatches.
 
+## Configuration
+Each selected repository must have a configuration file at `.github/webhook-actions/config.json`.
+```
+{
+  "events": [
+     "team_created"
+  ]
+}
+```
 ## Usage
 The following example, used in a GitHub Actions workflow, would trigger a workflow every time a new team is created in your organization.
 ```yaml
