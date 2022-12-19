@@ -38,7 +38,7 @@ A repository_dispatch type will be a combination of the webhook name and possibl
 - *team_added_to_repository*
 - *team_created*
 
-The *repository_dispatch* **webhook** will not be dispatched as this would cause a feedback loop.
+The *repository_dispatch* **webhook event** will not be dispatched as this would cause a feedback loop.
 
 See [GitHub Repository Dispatch Documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch) for further information.
 
