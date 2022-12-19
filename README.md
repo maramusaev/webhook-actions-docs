@@ -49,8 +49,8 @@ Rate limiting adheres to [GitHub Apps Rate Limits](https://docs.github.com/en/de
 ### Free
 Limited to a single repository and only a single webhook event. A configuration that has multiple `events` listed will default to using the **first event**. Unfortunately we cannot control order of repositories, so you must ensure you only have the application installed to a single repository. You can update this by going to your `Organization Settings -> Third-pary Access: GitHub Apps -> Webhook Actions: Configure -> Only select repositories` and ensuring that you only have a single repository selected.
 
-### Per Repository
-Coming soon.
+### Per Unit
+A Per Repository plan coming soon.
 
-### Enterprise
-Coming soon.
+### Flat Rate
+An Enterprise plan coming soon.
