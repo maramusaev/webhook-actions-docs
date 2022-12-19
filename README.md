@@ -44,3 +44,13 @@ See [GitHub Repository Dispatch Documentation](https://docs.github.com/en/action
 
 ## Rate Limiting
 Rate limiting adheres to [GitHub Apps Rate Limits](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps). In addition caching is used to minimize requests for installation, account, and Webhook Actions configs on each repository.
+
+## Plans
+### Free
+Limited to a single repository and only a single webhook event. A configuration that has multiple `events` listed will default to using the **first event**. Unfortunately we cannot control order of repositories, so you must ensure you only have the application installed to a single repository. You can update this by going to your `Organization Settings -> Third-pary Access: GitHub Apps -> Webhook Actions: Configure -> Only select repositories` and ensuring that you only have a single repository selected.
+
+### Per Repository
+Coming soon.
+
+### Enterprise
+Coming soon.
