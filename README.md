@@ -17,9 +17,10 @@ Install Webhook Actions app and select the repositories which should receive dis
 Each selected repository must have a configuration file at `.github/webhook-actions/config.json`.
 ```
 {
-  "events": [
-     "team_created"
-  ]
+  "events": {
+     "team_created": {},
+     "team_deleted": {}
+  }
 }
 ```
 ## Usage
@@ -29,6 +30,7 @@ on:
   repository_dispatch:
     types: 
       - team_created
+      - team_deleted
 ```
 
 For more repository_dispatch types, please see [GitHub Webhooks Documentation](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
