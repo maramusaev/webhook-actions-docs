@@ -24,7 +24,7 @@ Each selected repository must have a configuration file at `.github/webhook-acti
 }
 ```
 ## Usage
-The following example, used in a GitHub Actions workflow, would trigger a workflow every time a new team is created in your organization.
+The following example, used in a GitHub Actions workflow, would trigger a workflow every time a new team is created or deleted in your organization.
 ```yaml
 on:
   repository_dispatch:
