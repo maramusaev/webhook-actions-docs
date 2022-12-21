@@ -250,3 +250,6 @@
 - workflow_run_completed
 - workflow_run_in_progress
 - workflow_run_requested
+
+Please see [GitHub Webhooks Documentation](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads) and
+[GitHub Repository Dispatch Documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch) for further information.
