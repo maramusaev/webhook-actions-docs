@@ -45,7 +45,7 @@ See [GitHub Repository Dispatch Documentation](https://docs.github.com/en/action
 ## Rate Limiting
 Rate limiting adheres to [GitHub Apps Rate Limits](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps). In addition caching is used to minimize requests for installation, account, and Webhook Actions configs on each repository.
 
-Webhook Events do include the `repository_dispatch` event type. Webhook Actions does support this event type. However, `repository_dispatch` events from Webhook Actions itself are ignored.
+Any event fired from a workflow dispatched by Webhook Actions will also be ignored.
 
 ## Plans
 ### Free
