@@ -44,11 +44,14 @@ Any event fired from a workflow dispatched by Webhook Actions will also be ignor
 ### Free
 Limited to a single repository and only a single webhook event. A configuration that has multiple `events` listed will default to using the **first event**. Unfortunately we cannot control order of repositories, so you must ensure you only have the application installed to a single repository. You can update this by going to your `Organization Settings -> Third-pary Access: GitHub Apps -> Webhook Actions: Configure -> Only select repositories` and ensuring that you only have a single repository selected.
 
-### Per Unit
-A repository plan coming soon.
+### Pro (Personal)
+A per repository plan for personal repositories coming soon.
 
-### Flat Rate
-An enterprise plan coming soon.
+### Pro (Organization)
+A per repository plan for organization repositories coming soon.
+
+### Enterprise
+A flat rate plan for organizations with 20+ repositories coming soon.
 
 ## Careers
 Explore new opportunities with [Rise8](https://rise8.us/careers/).
