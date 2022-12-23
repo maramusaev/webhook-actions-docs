@@ -1,5 +1,5 @@
 {
   "events": {
-     "repository_dispatch": {}
+     "repository_dispatch.remote-repository-dispatch": {}
   }
 }
