@@ -206,6 +206,7 @@
 - repository_transferred
 - repository_unarchived
 - repository_dispatch
+  - See [how to dispatch between repositories](./examples/remote-repository-dispatch.md)
 - repository_import
 - repository_vulnerability_alert
 - repository_vulnerability_alert_create
