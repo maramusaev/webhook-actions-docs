@@ -14,7 +14,7 @@ sequenceDiagram
 Install Webhook Actions app and select the repositories which should receive dispatches and any repositories that you want reporting repository events.
 
 ## Configuration
-Each selected repository must have a configuration file at `.github/webhook-actions/config.json`.
+To enable event dispatch subscription on a repository you must have a configuration file at `.github/webhook-actions/config.json`.
 ```
 {
   "events": {
