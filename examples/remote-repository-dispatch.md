@@ -27,7 +27,7 @@ Your remote repository must have a `.github/webhook-actions/config.json` as foll
 ```json
 {
   "events": {
-    "repository_dispatch_remote-repsoitory-dispatch": {}
+    "repository_dispatch_remote-repository-dispatch": {}
   }
 }
 ```
