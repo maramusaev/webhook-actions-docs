@@ -1,5 +1,5 @@
 # Webhooks Actions GitHub App
-Turns your Organization's Webhook events into repository dispatches.
+Turns your organization's Webhook events into repository dispatches and allow you to dispatch Actions across repositories without the need for Personal Access Tokens.
 
 ## How it works
 
@@ -11,7 +11,7 @@ sequenceDiagram
 ```
 
 ## Installation
-Install Webhook Actions app and select the repositories which should receive dispatches.
+Install Webhook Actions app and select the repositories which should receive dispatches and any repositories that you want reporting repository events.
 
 ## Configuration
 Each selected repository must have a configuration file at `.github/webhook-actions/config.json`.
