@@ -33,7 +33,7 @@ To prevent unauthorized access to events across your organization's repositories
        "team_created": {}
      }
   },
-  "no-so-awesome-app": {
+  "not-so-awesome-app": {
      "events": {
        "team_deleted": {}
      }
