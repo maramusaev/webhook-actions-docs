@@ -14,8 +14,9 @@ sequenceDiagram
 Install Webhook Actions app and select the repositories which should receive dispatches and any repositories that you want reporting repository events.
 
 ## Configuration
+### Repository
 To enable event dispatch subscription on a repository you must have a configuration file at `.github/webhook-actions/config.json`.
-```
+```json
 {
   "events": {
      "team_created": {},
@@ -23,6 +24,24 @@ To enable event dispatch subscription on a repository you must have a configurat
   }
 }
 ```
+### Organization
+To prevent unauthorized access to events across your organization's repositories it is strongly recommended to use this configuration. You must create a repository named `webhook-actions-config`. Then create a file named `repositories.json`. In the example that follows, we are adding a repo configuration for the repos named `super-awesome-app` and `not-so-awesome-app`.
+```json
+{
+  "super-awesome-app": {
+     "events": {
+       "team_created": {}
+     }
+  },
+  "no-so-awesome-app": {
+     "events": {
+       "team_deleted": {}
+     }
+  }
+}
+```
+An organization config will override all individual repository configs if the json provides an object (even an empty object).
+
 ## Usage
 The following example, used in a GitHub Actions workflow, would trigger a workflow every time a new team is created or deleted in your organization.
 ```yaml
