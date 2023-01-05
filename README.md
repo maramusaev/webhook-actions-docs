@@ -63,7 +63,7 @@ Any event fired from a workflow dispatched by Webhook Actions will also be ignor
 
 ## Plans
 ### Free
-Limited to three repositories and one webhook event per repository. A configuration that has multiple `events` listed will default to using the **first event**. Unfortunately we cannot control order of repositories, so you must ensure you only have the application installed to a single repository. You can update this by going to your `Organization Settings -> Third-pary Access: GitHub Apps -> Webhook Actions: Configure -> Only select repositories` and ensuring that you only have a single repository selected.
+Limited to three repositories and one webhook event per repository. A configuration that has multiple `events` listed will default to using the **first event**. Unfortunately we cannot control order of repositories, so you must ensure you only have the application installed to a max of three repositories. You can update this by going to your `Organization Settings -> Third-pary Access: GitHub Apps -> Webhook Actions: Configure -> Only select repositories` and ensuring that you again only have a max of three repositories selected.
 
 ### Pro (Personal)
 A per repository plan for personal repositories coming soon.
