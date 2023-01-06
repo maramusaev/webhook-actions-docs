@@ -1,5 +1,7 @@
 # Webhooks Actions GitHub App
-Turns your organization's Webhook events into repository dispatches and securely dispatches Actions across repositories without the need for user created Personal Access Tokens. See it in the [GitHub Marketplace](https://github.com/marketplace/webhook-actions).
+Turns your organization's [250+ webhook events](https://github.com/rise8-us/webhook-actions-docs/blob/main/supported-events.md) into repository dispatches and _securely_ dispatches Actions across repositories without the need for user created Personal Access Tokens.
+
+See it in the [GitHub Marketplace](https://github.com/marketplace/webhook-actions).
 
 ## How it works
 
