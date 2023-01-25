@@ -31,18 +31,35 @@ To prevent unauthorized access to events across your organization's repositories
 ```json
 {
   "super-awesome-app": {
-     "events": {
-       "team_created": {}
-     }
+    "events": {
+      "team_created": {}
+    }
   },
   "not-so-awesome-app": {
-     "events": {
-       "team_deleted": {}
-     }
+    "events": {
+      "team_deleted": {}
+    }
   }
 }
 ```
 An organization config will override all individual repository configs if the json provides an object (even an empty object).
+
+### Filter
+Filtering is possible in an event configuration. To view all available notation please visit [sift](https://www.npmjs.com/package/sift). An example below shows a configuration setup to filter, inclusively, any teams created prefixed with the word `test`.
+```json
+{
+  "events": {
+    "team_created": {
+      "filter": {
+        "team.name": {
+          "$regex": "^test.*$"
+        }
+      }
+    }
+  }
+}
+```
+The entire payload can be filtered on minus action and installation, both of which are removed from the forwarded payload. See [GitHub Webhook events and Payloads](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
 
 ## Usage
 The following example, used in a GitHub Actions workflow, would trigger a workflow every time a new team is created or deleted in your organization.
