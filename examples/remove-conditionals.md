@@ -21,7 +21,7 @@ jobs:
 ```
 
 This workflow will actually trigger on pull_request closed, regardless of merge, which will result in many skipped jobs. We can do better and the 
-following will explain how we achieve conditionals inside of the Webhook Actions config.
+following will explain how we achieve this without conditionals in the workflow but rather in the Webhook Actions config.
 
 ## Minimum Requirements
 - The origin repository has Webhook Actions installed and must include the `.github/webhook-actions/config.json`.
