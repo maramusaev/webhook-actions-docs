@@ -100,7 +100,7 @@ jobs:
   report:
     runs-on: ubuntu-latest
     env:
-      PAYLOAD: ${{ toJSON(github.event.client_payload }}
+      PAYLOAD: ${{ toJSON(github.event.client_payload) }}
     steps:
       - name: Report
         # Do something with the payload
