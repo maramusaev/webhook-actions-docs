@@ -4,6 +4,8 @@ Transforms your organization's webhook events into streamlined repository dispat
 
 See it in the [GitHub Marketplace](https://github.com/marketplace/webhook-actions).
 
+Also, be sure to check out the [Webhook Actions Playground beta](https://rise8-us.github.io/webhook-actions/). This tool will help you validate your event configurations.
+
 ## How it works
 
 ```mermaid
